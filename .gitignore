@@ -1,0 +1,8 @@
+bin
+ANT/Results(*)
+*.pdf
+.DS_Store*
+.metadata
+.provarCaches
+.chromeProfiles
+.testcycles
