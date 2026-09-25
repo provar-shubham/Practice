@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testProject guid="bd90f182-12fd-405d-86d0-db169eb75ef3" selectedBrowserProviderDeviceName="1920x1080" selectedBrowserProviderName="Desktop">
+  <title>/ProvarAutomation-PM/.testproject</title>
+  <configPath>config</configPath>
+  <testsPath>tests</testsPath>
+  <testPlansPath>plans</testPlansPath>
+  <templatesPath>templates</templatesPath>
+  <sourcePath>src</sourcePath>
+  <secureStoragePath>.secrets</secureStoragePath>
+  <browserExecutablePath>C:/Program Files/Google/Chrome/Application/chrome.exe</browserExecutablePath>
+  <browserDebugPort>0</browserDebugPort>
+  <environments>
+    <environment guid="936a8805-6123-452f-a1c6-f758225b6514" name="Sandbox">
+      <summary/>
+    </environment>
+    <environment guid="1d118857-6656-40dc-8d17-5113ead606c9" name="BST">
+      <summary/>
+    </environment>
+    <environment guid="5b4bc693-4522-48b9-9ff7-abb2e75476b5" name="Monorail">
+      <summary/>
+    </environment>
+    <environment guid="c26c7177-5ab9-4993-b8dd-ebce2a190a35" name="PreRelease">
+      <summary/>
+    </environment>
+  </environments>
+  <variables/>
+  <connectionClasses>
+    <connectionClass name="sf">
+      <connections>
+        <connection id="9b430c98-4a5e-47d9-aad5-ebd4b662df20" name="LWC_Org">
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="7578006e-3e07-430f-86b5-35bd34ec6dd2" url="sf:environment=PROD_DEV;apiLoginUrl=https://testing250-dev-ed.develop.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00D5h000009Q6XQEA0/005J2000001MknSIAS;clientId={clientId};authenticationType=OAUTH_JWT;callbackUrl={callbackUrl};accessToken={accessToken};jwtCertLocation=templates/00D5h000009Q6XQ.jks;jwtUsername=anubhav1301sharma@gmail.com;jwtPassword={jwtPassword};jwtCertAlias=JwtCert;jwtCertType=JKS"/>
+          </connectionUrls>
+        </connection>
+        <connection id="72cbbfd5-643b-484c-9bae-84a1bfcdcc34" name="QA_LWC">
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="0861e10d-0cc8-45f6-a595-167f211e82d4" url="sf:environment=SANDBOX;apiLoginUrl=https://provar-lwc--lwctesting.sandbox.my.salesforce.com;identityServiceUrl=https://test.salesforce.com/id/00D3G0000008jnLUAQ/0053G000006Caf0QAC;clientId={clientId};authenticationType=OAUTH_JWT;callbackUrl={callbackUrl};accessToken={accessToken};jwtCertLocation=templates/00D3G0000008jnL.jks;jwtUsername=lwcautomation@provar.com.sandbox;jwtPassword={jwtPassword};jwtCertAlias=JWTApp;jwtCertType=JKS"/>
+          </connectionUrls>
+        </connection>
+      </connections>
+    </connectionClass>
+  </connectionClasses>
+  <browserConfigurations>
+    <browserConfiguration adjustBrowserWidthForChromeIde="true" browserHeight="0" browserWidth="0" name="Full Screen">
+      <summary>Full screen with Test Builder adjustment</summary>
+    </browserConfiguration>
+    <browserConfiguration browserHeight="768" browserHeightType="Pixels" browserWidth="1024" browserWidthType="Pixels" name="1024x768">
+      <summary>Fixed 1024x768</summary>
+    </browserConfiguration>
+    <browserConfiguration browserHeight="800" browserHeightType="Pixels" browserWidth="1280" browserWidthType="Pixels" name="1280x800">
+      <summary>Fixed 1280x800</summary>
+    </browserConfiguration>
+    <browserConfiguration browserHeight="768" browserHeightType="Pixels" browserWidth="1366" browserWidthType="Pixels" name="1366x768">
+      <summary>Fixed 1366x768</summary>
+    </browserConfiguration>
+    <browserConfiguration browserHeight="1080" browserHeightType="Pixels" browserWidth="1920" browserWidthType="Pixels" name="1920x1080">
+      <summary>Fixed 1920x1080</summary>
+    </browserConfiguration>
+  </browserConfigurations>
+  <antPath>ANT</antPath>
+  <testCyclePath>TestCycle</testCyclePath>
+  <browserApplications>
+    <browserApplication connectionTypes="sf" name="Salesforce1">
+      <properties>
+        <browserPlatformProperty name="browserName" platform="IOS" type="DesiredCapability" value="Safari"/>
+        <browserPlatformProperty name="browserName" platform="ANDROID" type="DesiredCapability" value="Chrome"/>
+      </properties>
+    </browserApplication>
+    <browserApplication connectionTypes="sf" name="ServiceMax FSA">
+      <properties>
+        <browserPlatformProperty name="bundleId" platform="IOS" type="DesiredCapability" value="com.servicemaxinc.svmxfieldserviceapp"/>
+        <browserPlatformProperty name="app" platform="DESKTOP" type="DesiredCapability" value="C:\\Program Files\\ServiceMax\\ServiceMax Field Service\\Laptop Mobile.exe"/>
+      </properties>
+    </browserApplication>
+  </browserApplications>
+  <browserProviders>
+    <browserProvider name="Desktop" type="SeleniumLocal">
+      <devices>
+        <browserProviderDevice name="Full Screen">
+          <properties>
+            <browserPlatformProperty name="summary" value="Full screen with Test Builder adjustment"/>
+            <browserPlatformProperty name="browserHeightType" value="Full"/>
+            <browserPlatformProperty name="browserWidthType" value="Full"/>
+            <browserPlatformProperty name="adjustBrowserWidthForChromeIde" value="true"/>
+          </properties>
+        </browserProviderDevice>
+        <browserProviderDevice name="1024x768">
+          <properties>
+            <browserPlatformProperty name="summary" value="Fixed 1024x768"/>
+            <browserPlatformProperty name="browserHeightType" value="Pixels"/>
+            <browserPlatformProperty name="browserWidthType" value="Pixels"/>
+            <browserPlatformProperty name="browserHeight" value="768"/>
+            <browserPlatformProperty name="browserWidth" value="1024"/>
+          </properties>
+        </browserProviderDevice>
+        <browserProviderDevice name="1280x800">
+          <properties>
+            <browserPlatformProperty name="summary" value="Fixed 1280x800"/>
+            <browserPlatformProperty name="browserHeightType" value="Pixels"/>
+            <browserPlatformProperty name="browserWidthType" value="Pixels"/>
+            <browserPlatformProperty name="browserHeight" value="800"/>
+            <browserPlatformProperty name="browserWidth" value="1280"/>
+          </properties>
+        </browserProviderDevice>
+        <browserProviderDevice name="1366x768">
+          <properties>
+            <browserPlatformProperty name="summary" value="Fixed 1366x768"/>
+            <browserPlatformProperty name="browserHeightType" value="Pixels"/>
+            <browserPlatformProperty name="browserWidthType" value="Pixels"/>
+            <browserPlatformProperty name="browserHeight" value="768"/>
+            <browserPlatformProperty name="browserWidth" value="1366"/>
+          </properties>
+        </browserProviderDevice>
+        <browserProviderDevice name="1920x1080">
+          <properties>
+            <browserPlatformProperty name="summary" value="Fixed 1920x1080"/>
+            <browserPlatformProperty name="browserHeightType" value="Pixels"/>
+            <browserPlatformProperty name="browserWidthType" value="Pixels"/>
+            <browserPlatformProperty name="browserHeight" value="1080"/>
+            <browserPlatformProperty name="browserWidth" value="1920"/>
+          </properties>
+        </browserProviderDevice>
+      </devices>
+    </browserProvider>
+  </browserProviders>
+  <associations/>
+</testProject>
