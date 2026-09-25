@@ -13,7 +13,7 @@ import com.provar.core.testapi.annotations.PageBinding.BindingType;
      , relativeUrl=""
      , connection="LWC_Org"
      )             
-${screenBindingAnno}
+
 public class MyPageObject {
 			
 }
